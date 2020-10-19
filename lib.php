@@ -96,10 +96,10 @@ function theme_xtec2020_get_pre_scss($theme) {
         'colorcontrast' => ['colorcontrast'],
     ];
 
-    $theme->settings->maincolor = !empty($theme->settings->maincolor) ? $theme->settings->maincolor : '#AC2013';
-    $theme->settings->fontcolor = !empty($theme->settings->fontcolor) ? $theme->settings->fontcolor : '#303030';
-    $theme->settings->linkscolor = !empty($theme->settings->linkscolor) ? $theme->settings->linkscolor : '#AC2013';
-    $theme->settings->headerbg = !empty($theme->settings->headerbg) ? $theme->settings->headerbg : '#f4f4f4';
+    $theme->settings->maincolor = !empty($theme->settings->maincolor) ? $theme->settings->maincolor : '#FF494E';
+    $theme->settings->fontcolor = !empty($theme->settings->fontcolor) ? $theme->settings->fontcolor : '#007377';
+    $theme->settings->linkscolor = !empty($theme->settings->linkscolor) ? $theme->settings->linkscolor : '#910048';
+    $theme->settings->headerbg = !empty($theme->settings->headerbg) ? $theme->settings->headerbg : '#F8F8F8';
     if (!empty($theme->settings->colorset) && $theme->settings->colorset == 'nodes' &&
         theme_xtec2020_is_service_enabled('nodes')) {
         $colors = get_colors_from_nodes(true);

@@ -1,8 +1,8 @@
-$maincolor: #ac2013 !default; //color2
+$maincolor: #ff494e !default; //color2
 $colorcontrast: white !default;
-$fontcolor: #303030 !default; //color4
-$linkscolor: #ac2013 !default; //color5
-$headerbg: #f4f4f4 !default;
+$fontcolor: #007377 !default; //color4
+$linkscolor: #910048 !default; //color5
+$headerbg: #f8f8f8 !default;
 $fontsize: 1rem !default;
 $fontfamily: null !default;
 $texttransform: null !default;
@@ -70,6 +70,22 @@ h4 {
     .row {
         min-height: 93px;
     }
+
+    &.odissea {
+        background-image: url('[[pix:theme|top_odissea]]');
+    }
+    
+    &.alexandria {
+        background-image: url('[[pix:theme|top_alexandria]]');
+    }
+    
+    &.eix {
+        background-image: url('[[pix:theme|top_eix]]');
+    }
+
+    &.eoi {
+        background-image: url('[[pix:theme|top_eoi]]');
+    }    
 }
 
 /* Remove duplicated link to messages */
@@ -394,6 +410,7 @@ nav.fixed-top.navbar {
 
     .moodle_footer img {
         width: 95px;
+        margin-top: -8px;
     }
 }
 
