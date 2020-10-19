@@ -226,3 +226,34 @@ function theme_xtec2020_show_course_grades($showgrades, $courseid) {
 
     return false;
 }
+
+/**
+ * Returns the name of the XTEC service currently running, with an optional prefix.
+ * Current valid options are "eix", "alexandria" and "odissea" 
+ *
+ * @param string $prefix
+ * @return string
+ */
+function get_xtec_type($prefix = '') {
+    global $CFG;
+
+    $type = '';
+
+    if ($setting = get_config('theme_xtec2020', 'xtec_type')) {
+        $type = $prefix.$setting;
+    }
+    elseif (isset($CFG->isalexandria) && $CFG->isalexandria) {
+        $type = $prefix.'alexandria';
+    }
+    elseif (isset($CFG->isodissea) && $CFG->isodissea) {
+        $type = $prefix.'odissea';
+    }
+    elseif (isset($CFG->iseoi) && $CFG->iseoi) {
+        $type = $prefix.'eoi';
+    }
+    elseif (isset($CFG->isagora) && $CFG->isagora) {
+        $type = $prefix.'eix';
+    }
+
+    return $type;
+} 
