@@ -236,6 +236,17 @@ nav.fixed-top.navbar {
     }
 }
 
+/* Improve contrast in dropdown menus */
+.dropdown-item {
+    &:active,
+    &:hover,
+    &:focus,
+    &:focus-within {
+        outline: 0;
+        background-color: $maincolor;
+    }
+}
+
 #nav-drawer {
     background: $gray-100;
     border-right: 1px solid $gray-200;
