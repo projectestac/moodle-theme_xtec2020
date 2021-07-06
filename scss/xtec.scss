@@ -428,22 +428,8 @@ nav.fixed-top.navbar {
 }
 
 #goto-top-link {
-    i {
-        opacity: 0.3;
-        display: block;
-        background-color: $gray-600;
-        color: $white;
-        border-radius: 50%;
-        position: fixed;
-        height: 32px;
-        width: 32px;
-        line-height: 32px;
-        vertical-align: middle;
-        bottom: 20px;
-        right: 20px;
-        text-align: center;
-        font-size: 24px;
-    }
+    /* Ensure image "to top" is always on top of all the content */
+    z-index: 1000;
 }
 
 .availabilityinfoXTEC {
