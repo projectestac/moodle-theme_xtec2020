@@ -36,7 +36,7 @@ $THEME->prescsscallback = 'theme_xtec2020_get_pre_scss';
 $THEME->precompiledcsscallback = 'theme_xtec2020_get_precompiled_css';
 $THEME->requiredblocks = ''; // Allow removal of block 'Navigation' and 'settings'
 $THEME->yuicssmodules = [];
-$THEME->scss = function($theme) {
+$THEME->scss = static function($theme) {
     return theme_xtec2020_get_main_scss_content($theme);
 };
 
